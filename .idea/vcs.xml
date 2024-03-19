@@ -4,5 +4,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Opencv and Numpy" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/git_class" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/git_file_for_book(Mastering OpenCV4 with Python)" vcs="Git" />
   </component>
 </project>
