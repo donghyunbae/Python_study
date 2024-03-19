@@ -1,0 +1,45 @@
+<git 환경 설정하기>
+git config --global user.name “name”
+git config --global user.email “email”
+git config --list (name과 email 잘 들어갔는지 확인하기)
+
+<내가 올릴 때> -vscode
+git init 처음만들 때 초기화 작업.
+
+git add . (모든 것)
+
+git commit –m “first commit”
+
+연결고리 만들기
+git remote add origin “주소”
+
+git push origin master
+
+
+<받을 때> -vscode
+git clone “주소” / 폴더이름
+
+git add .
+->(clone할 때 이미 세팅정보도 가져와서 init, remote 는 하지 않아도됨)
+
+git commit –m “이름”
+
+(1) git push origin master
+
+새로운 branch 만들기
+(2) git checkout –b “branch name”
+	이후 git push origin “branch name”
+master 로 가기전에 pull request를 통해 코드를 등록함
+이후 master가 코드 확인 후 Merge pull request 버튼을 누르는 순간 코드가 전부 합쳐짐
+
+만약 여러사람들이 동시 작업중일 경우..
+서로 코드를 다르게 작성하고있으므로 코드가 많이 변할 수 있다.
+이상태에서 내가 작성하는 코드의 변동 없이 master의 코드를 덧붙히는 방법
+- 먼저 코드 저장
+git add .
+git commit –m “second commit”
+여기서 push하기 전에
+git pull origin master !!! -> 이러면 동기화 작업이 완료 됨 .
+그 다음 git push origin master
+하면 업데이트 완료!
+
